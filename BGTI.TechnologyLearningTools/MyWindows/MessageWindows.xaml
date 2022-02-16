@@ -1,0 +1,17 @@
+﻿<Window x:Class="BGTI.TechnologyLearningTools.MyWindows.MessageWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BGTI.TechnologyLearningTools.MyWindows"
+        mc:Ignorable="d"
+        Title="Ввшз Данных"  SizeToContent="WidthAndHeight"  WindowStartupLocation="CenterOwner">
+    <Grid Margin="25">
+        <StackPanel Margin="5">
+            <TextBox MinWidth="150" Margin="5,5,5,0" x:Name="tbContent" ></TextBox>
+            <Label Margin="5,0,5,5" VerticalAlignment="Bottom" HorizontalAlignment="Center" x:Name="labelMassege">введите</Label>
+            
+            <Button x:Name="tbGoContent" Click="tbGoContent_Click">Ввести</Button> 
+        </StackPanel>
+    </Grid>
+</Window>

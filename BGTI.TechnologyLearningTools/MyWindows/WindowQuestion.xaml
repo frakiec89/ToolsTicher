@@ -1,0 +1,32 @@
+﻿<Window x:Class="BGTI.TechnologyLearningTools.MyWindows.WindowQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BGTI.TechnologyLearningTools.MyWindows"
+        mc:Ignorable="d"
+        Title="Рекадтор вопроса" MinHeight="300"  SizeToContent="WidthAndHeight">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel  Margin="10" x:Name="stackQ" Grid.Row="0">
+            <StackPanel x:Name="sHider" HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="Horizontal">
+                <Label Content="Укажите вопрос:" />
+                <TextBox  Margin="5,1,0,1" HorizontalAlignment="Left"  HorizontalContentAlignment="Stretch" 
+                          x:Name="tbQ" MinWidth="300" ></TextBox>
+                <Label Content="Укажите Цену вопроса:" />
+                <TextBox  Margin="5,1,0,1" HorizontalAlignment="Left"  HorizontalContentAlignment="Stretch" 
+                          x:Name="tbChena" MinWidth="50" ></TextBox>
+            </StackPanel>
+           
+            
+            <Button HorizontalAlignment="Center" Padding="5" Margin="5" x:Name="btAdd" Click="btAdd_Click" >добавить  вариант  ответа</Button>
+          
+        </StackPanel>
+        <Button HorizontalAlignment="Center" Padding="5" Margin="5" Grid.Row="1" Content="Добавит вопрос" Click="Button_QGoToDb" />
+    </Grid>
+</Window>
